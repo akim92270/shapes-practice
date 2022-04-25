@@ -39,23 +39,16 @@ public class TestShapes {
         Rectangle rectangle = new Rectangle();
         Square square = new Square();
         Circle circle = new Circle();
-        //Rectangle setting
         rectangle.setWidth(5.5);
         rectangle.setHeight(6);
-        //Square setting
         square.setSide(2.5);
-        //Circle setting
         circle.setRadius(4);
 
-        //Storing all objects in a collection
+        //Object Collection
         ArrayList<Shape> shapes = new ArrayList<>();
         shapes.add(rectangle);
         shapes.add(square);
         shapes.add(circle);
-
-        //Printing them out using for-each loop
-        //  for (Shape shape : shapes) {
-        //    System.out.println(shape);
 
 
         //Printing circle info
@@ -78,8 +71,6 @@ public class TestShapes {
         for (Shape shape : shapes) {
             if(shape.area() > max) max = shape.area();
             objectName = shape;
-
-
         }
 
         System.out.println("\n" + objectName.getClass().getSimpleName() + " has the largest area as " + max);
